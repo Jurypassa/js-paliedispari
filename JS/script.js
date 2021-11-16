@@ -40,3 +40,18 @@
 
 //Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma 
 
+const parola = prompt("Inserisci il tuo nome");
+  
+
+function palindromo(nome) {
+   return nome.split("").reverse().join("");
+}
+
+let nomePalindromo = palindromo(parola);
+
+
+if (parola === nomePalindromo){
+    alert("E' Palindromo");
+}else{
+    alert("Non è Palindromo"); 
+}
